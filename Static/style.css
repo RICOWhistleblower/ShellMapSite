@@ -1,104 +1,196 @@
- `css
+/* ==========================
+   🕊️ Lex Divina Design Tokens
+   ========================== */
+:root {
+  --divine-gold: #D4AF37;
+  --lex-line-style: 1px solid #4A3F2B;
+  --sacred-serif: 'Georgia', serif;
+  --mission-sans: 'Open Sans', sans-serif;
+  --header-spacing: 0.05em;
+  --subtitle-size: 1.25rem;
+  --cta-accent: #B98524;
+  --ambient-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+  --form-bg: #fefdf9;
+  --form-border: #c5b383;
+  --scripture-bg: #fcf7e6;
+}
+
+/* ==========================
+   📐 Typography & Layout
+   ========================== */
 body {
-  font-family: 'Lora', serif;
-  background-color: #121212;
-  color: #f4f4f4;
+  font-family: var(--mission-sans);
+  color: #2E2E2E;
+  background-color: #fff;
   margin: 0;
   padding: 0;
-}
-
-header {
-  background-color: #2d2d2d;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  position: relative;
-}
-
-nav a {
-  color: #ff5555;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ff9999;
-}
-
-.hero {
-  padding: 60px 20px;
-  background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.2em;
-  color: #ff2e2e;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto 30px auto;
   line-height: 1.6;
 }
 
-.cta {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background-color: #ff2e2e;
-  color: #fff;
+h1, h2, h3 {
+  font-family: var(--mission-sans);
+  letter-spacing: var(--header-spacing);
+  margin: 1.5em 0 0.5em;
+}
+
+.subtitle {
+  font-size: var(--subtitle-size);
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+/* ==========================
+   📖 Doctrinal Blocks
+   ========================== */
+.micah-callout {
+  font-family: var(--sacred-serif);
+  font-style: italic;
+  font-weight: 600;
+  color: #4A3F2B;
+  background-color: #faf8f1;
+  border-left: 4px solid var(--divine-gold);
+  padding: 1em;
+  margin: 2em 0;
+}
+
+.scripture-quote {
+  font-family: var(--sacred-serif);
+  font-style: italic;
+  text-align: center;
+  color: #5A4732;
+  background-color: var(--scripture-bg);
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 6px;
+  box-shadow: var(--ambient-shadow);
+}
+
+.quote-caption {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5em;
+}
+
+/* ==========================
+   ✒️ Lex Divina Mission Blocks
+   ========================== */
+.mission-block {
+  background-color: #fff8e1;
+  border-left: 6px solid var(--divine-gold);
+  padding: 1.5em;
+  margin: 2em 0;
+  box-shadow: var(--ambient-shadow);
+}
+
+.mission-body {
+  font-family: var(--mission-sans);
+  font-size: 1.1rem;
+  color: #2E2E2E;
+}
+
+.mission-signature {
+  font-family: var(--sacred-serif);
+  font-weight: 600;
+  text-align: right;
+  color: #6A5A39;
+  margin-top: 1em;
+}
+
+/* ==========================
+   🧱 Dividers & Symbolism
+   ========================== */
+.divine-divider {
+  border-top: var(--lex-line-style);
+  margin: 2em 0;
+  box-shadow: var(--ambient-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.divine-divider:hover {
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+}
+
+/* ==========================
+   💌 CTAs & Engagement
+   ========================== */
+.cta-sacred {
+  background-color: var(--cta-accent);
+  color: white;
+  padding: 0.75em 1.25em;
+  font-weight: bold;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: var(--ambient-shadow);
+  transition: all 0.3s ease;
+}
+
+.cta-sacred:hover {
+  background-color: #936720;
+  box-shadow: 0 0 12px rgba(185, 133, 36, 0.4);
+  transform: scale(1.02);
+}
+
+/* ==========================
+   🧾 Secure Form Styling
+   ========================== */
+.secure-form {
+  background-color: var(--form-bg);
+  border: 1px solid var(--form-border);
+  padding: 2em;
+  margin: 2em 0;
+  border-radius: 6px;
+  box-shadow: var(--ambient-shadow);
+}
+
+.secure-form input,
+.secure-form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  font-family: var(--mission-sans);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.secure-form button {
+  background-color: var(--cta-accent);
+  color: white;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #ff9999;
-}
-
-section {
-  padding: 40px 20px;
-  animation: fadeIn 0.8s ease forwards;
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-.panel {
-  background-color: #1e1e1e;
-  margin: 20px 0;
-  border: 1px solid #444;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.panel-header {
-  padding: 15px;
-  background-color: #292929;
+  padding: 0.75em 1.5em;
+  border: none;
   cursor: pointer;
-  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
-.panel-content {
-  display: none;
-  padding: 15px;
+.secure-form button:hover {
+  background-color: #936720;
+  box-shadow: var(--ambient-shadow);
 }
-`
+
+/* ==========================
+   🌓 Ambient Symbolic Touches
+   ========================== */
+.section-highlight {
+  background-image: linear-gradient(
+    145deg,
+    rgba(212, 175, 55, 0.05),
+    rgba(74, 63, 43, 0.05)
+  );
+  padding: 1.5em;
+  border-radius: 6px;
+}
+
+/* Scroll effect for scripture blocks */
+@keyframes scrollRipple {
+  from { box-shadow: 0 0 0 rgba(212, 175, 55, 0); }
+  to { box-shadow: 0 0 12px rgba(212, 175, 55, 0.4); }
+}
+
+.scripture-quote:target {
+  animation: scrollRipple 1s ease-out;
+}

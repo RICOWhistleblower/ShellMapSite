@@ -1,0 +1,53 @@
+`html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evidence Archive — Massey Services, Inc.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="genesis-of-suppression.html">Suppression Layer</a></li>
+        <li><a href="evidence.html">Evidence Archive</a></li>
+        <li><a href="submit-testimony.html">Submit Testimony</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>The Archive: Redacted Files & Chronological Exposure</h1>
+    <p>Every document, timestamp, and pattern tied to Massey Services, Inc.—organized for forensic clarity and legal readiness.</p>
+
+    <div class="panel">
+      <div class="panel-header">Email Thread: Whistleblower Complaint Dismissal</div>
+      <div class="panel-content">
+        <p>Chain revealing internal mockery of ethics reporting and preemptive distancing.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">Operation Evasion: Licensing Circumvention Memoranda</div>
+      <div class="panel-content">
+        <p>PDF memos and statements detailing tactics to bypass safety standards.</p>
+      </div>
+    </div>
+
+    <a class="cta" href="#">Download Full Redacted Archive (ZIP)</a>
+  </section>
+
+  <script>
+    document.querySelectorAll('.panel-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
+`

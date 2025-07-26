@@ -1,149 +1,122 @@
-/* ==========================
-   🕊️ Lex Divina Design Tokens
-   ========================== */
+/* ============================================
+   🔹 Mandatum Dei Core Layer – Justice Doctrine
+   ============================================ */
+
 :root {
-  --divine-gold: #D4AF37;
-  --lex-line-style: 1px solid #4A3F2B;
-  --sacred-serif: 'Georgia', serif;
+  --mandatum-slate: #2c2c2c;
+  --mandatum-blue: #1f4bb5;
+  --mandatum-white: #ffffff;
+  --mandatum-black: #000000;
+  --bridging-tone: #6f4e37; /* 🟤 Deep Bronze Bridge */
   --mission-sans: 'Open Sans', sans-serif;
   --header-spacing: 0.05em;
   --subtitle-size: 1.25rem;
-  --cta-accent: #B98524;
-  --ambient-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
-  --form-bg: #fefdf9;
-  --form-border: #c5b383;
-  --scripture-bg: #fcf7e6;
+  --donation-bg: #eaeaea;
+  --donation-fill: var(--mandatum-blue);
+  --donation-text: #333;
 }
 
-/* ==========================
-   📐 Typography & Layout
-   ========================== */
 body {
   font-family: var(--mission-sans);
-  color: #2E2E2E;
-  background-color: #fff;
+  background-color: var(--mandatum-slate);
+  color: var(--mandatum-white);
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-family: var(--mission-sans);
   letter-spacing: var(--header-spacing);
   margin: 1.5em 0 0.5em;
+  font-weight: 700;
+  color: var(--mandatum-white);
 }
 
 .subtitle {
   font-size: var(--subtitle-size);
   font-weight: 600;
-  color: #333;
+  color: var(--mandatum-white);
   margin-bottom: 1em;
 }
 
-/* ==========================
-   📖 Doctrinal Blocks
-   ========================== */
-.micah-callout {
-  font-family: var(--sacred-serif);
-  font-style: italic;
+/* ============================================
+   📜 Mandatum Invocation – “It is Written”
+   ============================================ */
+
+.it-is-written {
+  font-family: var(--mission-sans);
   font-weight: 600;
-  color: #4A3F2B;
-  background-color: #faf8f1;
-  border-left: 4px solid var(--divine-gold);
-  padding: 1em;
+  font-size: 1.1rem;
+  color: var(--bridging-tone);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 2em 0 1em;
+  text-align: center;
+}
+
+/* ============================================
+   🔸 Lex Divina Components – Symbolic Modules
+   🔸 Scoped to mission/callout blocks only
+   ============================================ */
+
+.mission-block {
+  background-color: #fcf7e6;
+  border-left: 4px solid var(--bridging-tone);
+  padding: 1.5em;
   margin: 2em 0;
+  color: #4A3F2B;
+}
+
+.mission-signature {
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  text-align: right;
+  color: var(--bridging-tone);
+  margin-top: 1em;
 }
 
 .scripture-quote {
-  font-family: var(--sacred-serif);
+  font-family: 'Georgia', serif;
   font-style: italic;
-  text-align: center;
+  background-color: #fefaf2;
   color: #5A4732;
-  background-color: var(--scripture-bg);
   padding: 1em;
   margin: 1.5em 0;
   border-radius: 6px;
-  box-shadow: var(--ambient-shadow);
+  border-left: 4px solid var(--bridging-tone);
 }
 
 .quote-caption {
   text-align: right;
   font-style: italic;
   font-size: 0.9rem;
-  color: #777;
+  color: var(--bridging-tone);
   margin-top: 0.5em;
 }
 
-/* ==========================
-   ✒️ Lex Divina Mission Blocks
-   ========================== */
-.mission-block {
-  background-color: #fff8e1;
-  border-left: 6px solid var(--divine-gold);
+/* ============================================
+   🟤 Deep Bronze Bridge – Transitional Layer
+   ============================================ */
+
+.section-highlight {
+  background-color: #f3ede7;
+  border-left: 4px solid var(--bridging-tone);
   padding: 1.5em;
+  border-radius: 6px;
   margin: 2em 0;
-  box-shadow: var(--ambient-shadow);
+  color: #3a2e20;
 }
 
-.mission-body {
-  font-family: var(--mission-sans);
-  font-size: 1.1rem;
-  color: #2E2E2E;
-}
+/* ============================================
+   💡 Functional Logic – CTAs, Forms, Donation Bars
+   ============================================ */
 
-.mission-signature {
-  font-family: var(--sacred-serif);
-  font-weight: 600;
-  text-align: right;
-  color: #6A5A39;
-  margin-top: 1em;
-}
-
-/* ==========================
-   🧱 Dividers & Symbolism
-   ========================== */
-.divine-divider {
-  border-top: var(--lex-line-style);
-  margin: 2em 0;
-  box-shadow: var(--ambient-shadow);
-  transition: box-shadow 0.3s ease;
-}
-
-.divine-divider:hover {
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
-}
-
-/* ==========================
-   💌 CTAs & Engagement
-   ========================== */
-.cta-sacred {
-  background-color: var(--cta-accent);
-  color: white;
-  padding: 0.75em 1.25em;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 4px;
-  display: inline-block;
-  box-shadow: var(--ambient-shadow);
-  transition: all 0.3s ease;
-}
-
-.cta-sacred:hover {
-  background-color: #936720;
-  box-shadow: 0 0 12px rgba(185, 133, 36, 0.4);
-  transform: scale(1.02);
-}
-
-/* ==========================
-   🧾 Secure Form Styling
-   ========================== */
 .secure-form {
-  background-color: var(--form-bg);
-  border: 1px solid var(--form-border);
+  background-color: #1e1e1e;
+  border: 1px solid var(--bridging-tone);
   padding: 2em;
   margin: 2em 0;
   border-radius: 6px;
-  box-shadow: var(--ambient-shadow);
 }
 
 .secure-form input,
@@ -154,11 +127,13 @@ h1, h2, h3 {
   font-family: var(--mission-sans);
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #fff;
+  color: #000;
 }
 
 .secure-form button {
-  background-color: var(--cta-accent);
-  color: white;
+  background-color: var(--mandatum-blue);
+  color: var(--mandatum-white);
   font-weight: bold;
   padding: 0.75em 1.5em;
   border: none;
@@ -168,29 +143,55 @@ h1, h2, h3 {
 }
 
 .secure-form button:hover {
-  background-color: #936720;
-  box-shadow: var(--ambient-shadow);
+  background-color: #153a92;
 }
 
-/* ==========================
-   🌓 Ambient Symbolic Touches
-   ========================== */
-.section-highlight {
-  background-image: linear-gradient(
-    145deg,
-    rgba(212, 175, 55, 0.05),
-    rgba(74, 63, 43, 0.05)
-  );
-  padding: 1.5em;
+.donation-bar {
+  background-color: var(--donation-bg);
   border-radius: 6px;
+  padding: 1em;
+  margin: 2em 0;
+  color: var(--donation-text);
 }
 
-/* Scroll effect for scripture blocks */
-@keyframes scrollRipple {
-  from { box-shadow: 0 0 0 rgba(212, 175, 55, 0); }
-  to { box-shadow: 0 0 12px rgba(212, 175, 55, 0.4); }
+.donation-fill {
+  background-color: var(--donation-fill);
+  height: 20px;
+  border-radius: 4px;
+  transition: width 0.3s ease;
 }
 
-.scripture-quote:target {
-  animation: scrollRipple 1s ease-out;
+.donation-label {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.cta-engage {
+  background-color: var(--mandatum-blue);
+  color: var(--mandatum-white);
+  padding: 0.75em 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.cta-engage:hover {
+  background-color: #153a92;
+  transform: scale(1.02);
+}
+
+/* ============================================
+   🛡️ Emblem Styling – Visibility Fix
+   ============================================ */
+
+.site-emblem {
+  fill: var(--mandatum-white);
+  height: 40px;
+  transition: fill 0.3s ease;
+}
+
+.slate-bg .site-emblem {
+  fill: var(--bridging-tone);
 }

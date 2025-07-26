@@ -1,53 +1,76 @@
-`html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evidence Archive — Massey Services, Inc.</title>
+  <title>Submit Evidence</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="genesis-of-suppression.html">Suppression Layer</a></li>
-        <li><a href="evidence.html">Evidence Archive</a></li>
-        <li><a href="submit-testimony.html">Submit Testimony</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
 
-  <section>
-    <h1>The Archive: Redacted Files & Chronological Exposure</h1>
-    <p>Every document, timestamp, and pattern tied to Massey Services, Inc.—organized for forensic clarity and legal readiness.</p>
+    <!-- 🔍 Evidence Intake Header -->
+    <h1>Submit Evidence of Misconduct</h1>
+    <p class="subtitle">Your testimony is sacred. Your truth is protected.</p>
 
-    <div class="panel">
-      <div class="panel-header">Email Thread: Whistleblower Complaint Dismissal</div>
-      <div class="panel-content">
-        <p>Chain revealing internal mockery of ethics reporting and preemptive distancing.</p>
-      </div>
+    <!-- 📖 Scriptural Framing -->
+    <div class="scripture-quote">
+      “Speak up for those who cannot speak for themselves… defend the rights of the poor and needy.”<br>
+      <span class="quote-caption">—Proverbs 31:8–9</span>
     </div>
 
-    <div class="panel">
-      <div class="panel-header">Operation Evasion: Licensing Circumvention Memoranda</div>
-      <div class="panel-content">
-        <p>PDF memos and statements detailing tactics to bypass safety standards.</p>
-      </div>
+    <div class="mission-block">
+      <p class="mission-body">
+        Every submission builds the archive of truth. Evidence shared here will be preserved with integrity, immune to retaliation, and reviewed only by advocates committed to justice.
+      </p>
+      <p class="mission-signature">— Mandate: Lex Divina</p>
     </div>
 
-    <a class="cta" href="#">Download Full Redacted Archive (ZIP)</a>
-  </section>
+    <!-- 📁 Secure Upload Form -->
+    <form action="/submit-evidence" method="post" enctype="multipart/form-data" class="form-sacred">
 
-  <script>
-    document.querySelectorAll('.panel-header').forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  </script>
+      <!-- 📝 Your Statement -->
+      <label for="testimony" class="label-sacred">Your Testimony</label>
+      <textarea id="testimony" name="testimony" rows="8" class="input-sacred" placeholder="Describe what happened… be as specific and truthful as possible."></textarea>
+
+      <!-- 📎 File Upload -->
+      <label for="evidence-file" class="label-sacred">Attach Supporting Files (PDF, images, audio)</label>
+      <input type="file" id="evidence-file" name="evidence-file" class="input-sacred" />
+
+      <!-- 📍 Location (Optional) -->
+      <label for="location" class="label-sacred">Location of Incident (City, State)</label>
+      <input type="text" id="location" name="location" class="input-sacred" />
+
+      <!-- 📆 Date (Optional) -->
+      <label for="date" class="label-sacred">Date of Incident</label>
+      <input type="date" id="date" name="date" class="input-sacred" />
+
+      <!-- 💡 Verse Alignment -->
+      <label for="verse" class="label-sacred">Choose the Scripture that frames your submission</label>
+      <select id="verse" name="verse" class="input-sacred">
+        <option value="isaiah">Isaiah 1:17 — Defend the Oppressed</option>
+        <option value="psalm">Psalm 107:2 — Tell Your Story</option>
+        <option value="ephesians">Ephesians 5:11 — Expose Darkness</option>
+        <option value="jeremiah">Jeremiah 22:3 — Rescue the Robbed</option>
+        <option value="micah">Micah 6:8 — Walk Justly</option>
+      </select>
+
+      <!-- 🚀 Submit Button -->
+      <button type="submit" class="cta-sacred">Submit Testimony</button>
+    </form>
+
+    <!-- 🔱 Divider -->
+    <div class="divine-divider"></div>
+
+    <!-- 🕊️ Assurance Footer -->
+    <p class="subtitle">
+      Every truth spoken here is part of a larger reckoning. You are not alone.
+    </p>
+    <div class="scripture-quote">
+      “Then you will know the truth, and the truth will set you free.”<br>
+      <span class="quote-caption">—John 8:32</span>
+    </div>
+
+  </div>
 </body>
 </html>
-`

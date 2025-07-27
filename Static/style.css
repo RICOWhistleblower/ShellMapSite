@@ -195,3 +195,23 @@ h1, h2, h3 {
 .slate-bg .site-emblem {
   fill: var(--bridging-tone);
 }
+
+/* ============================================
+   🕊️ Footer Attribution – Witness & Mandate
+   ============================================ */
+
+.site-footer {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: var(--mandatum-black);
+  color: var(--mandatum-white);
+  font-size: 0.95rem;
+  border-top: 2px solid var(--bridging-tone);
+  font-family: var(--mission-sans);
+}
+
+.footer-credit {
+  margin-top: 1em;
+  font-style: italic;
+  color: var(--bridging-tone);
+}
